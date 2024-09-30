@@ -1,0 +1,70 @@
+//mixin
+@use '../partials/variables' as*;
+
+@mixin border-solid {
+    border: 1px solid $border-light;
+    border-radius: 5px;
+
+}
+
+@mixin border-radius-solid {
+    border: 1px solid $border-light;
+    border-radius: 15px;
+}
+
+@mixin link {
+    color: $quaternary-color;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+@mixin shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // ombreggiatura leggera e sottile
+    // box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.214)
+
+}
+
+@mixin light-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@mixin button {
+
+    background-color: $primary-color;
+    padding: 0.5rem 1rem;
+    color: $quaternary-color;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.2rem;
+
+}
+
+@mixin button-hover {
+
+    background-color: $secondary-color;
+    padding: 0.5rem 1rem;
+    color: $quaternary-color;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.2rem;
+
+}
+
+@mixin button-radius {
+
+    background-color: $primary-color;
+    color: $quaternary-color;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 1.5rem;
+
+}
+
+
+@mixin title {
+    color: $secondary-color;
+    font-size: 2rem;
+    font-weight: 700;
+}
